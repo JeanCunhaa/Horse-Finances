@@ -12,24 +12,27 @@ export const data = [
 
 export const options = {
   title: "Bitcoin",
-  hAxis: { title: "Year", titleTextStyle: { color: "#333" } },
-  vAxis: { minValue: 0 },
+  titleTextStyle: {color: "white"},
+  backgroundColor: "#18191a",
+  hAxis: { title: "Year", titleTextStyle: { color: "#b0b0a3" }, textStyle: {color: "white"} },
+  vAxis: { minValue: 0, textStyle: {color: "white"} },
+  legend: {textStyle: {color: "white"} },
   chartArea: { width: "50%", height: "70%" },
 };
 
 const Grafico = () => {
   return (
     <div className='Grafico'>
-      <h1 className=''>Graficos em React</h1>
-
-      <Chart
-      chartType="AreaChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
-
+      <h1>Graficos em React</h1>
+      <div className='rola'>
+        <Chart 
+        chartType="AreaChart"
+        width="100%"
+        height="400px"
+        data={data}
+        options={options}
+      />
+      </div>
     
     </div>
   );

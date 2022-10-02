@@ -152,6 +152,14 @@ h4{
     font-weight: bold;
     font-size: 1.563rem;
 }
+footer{
+    background-color: #242526;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+
 
 /* VERSÃO MOBILE / @MEDIA */
 
@@ -203,9 +211,9 @@ h4{
         <header>
             <div class="area-login">
                 <div class="icone-cabecalho">
-                    <img src="img/contorno-de-cabeca-de-cavalo.png" alt="" class="icone-login">
+                    <img src="img/contorno-de-cabeca-de-cavalo.png" title="cabeca-cavalo" class="icone-login" >
                     
-                    <img src="img/HF.png" alt="" class="icone-login">
+                    <img src="img/HF.png" alt="" class="icone-login" >
                     
                 </div>
                 <div class="login">
@@ -218,7 +226,7 @@ h4{
                 <h1 class="logo">Horse Finances</h1>
                 <form action="#" method="post">
                     <input class="search" type="text" placeholder="Buscar">
-                    <input class="lupa" type="image" src="img/download.png">
+                    <input class="lupa" type="image" src="img/download.png" >
                 </form>
             </div>
         
@@ -256,7 +264,7 @@ h4{
             
         </div>
 
-        <!--
+        
         <div class="grafico">
             <h3>Gráfico de <span class="ativo">nome_ativo</span> para BRL</h3>
         </div>
