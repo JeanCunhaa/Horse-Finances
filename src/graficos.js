@@ -17,9 +17,9 @@ export const options = {
   chartArea: { width: "50%", height: "70%" },
 };
 
-const App = () => {
+const Grafico = () => {
   return (
-    <div className='app'>
+    <div className='Grafico'>
       <h1 className=''>Graficos em React</h1>
 
       <Chart
@@ -35,4 +35,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Grafico;
