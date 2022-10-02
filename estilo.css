@@ -1,0 +1,123 @@
+/* GERAL */
+
+*{
+    margin: 0px;
+}
+
+/* CABEÇALHO */
+
+
+
+.area-login{
+    background: #919191;
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.icone-login{
+    margin-left: 1rem;
+}
+
+.login{
+    margin-left: 1rem;
+}
+
+.link{
+    padding: 1rem;
+    text-decoration: none;
+    color:#8e8484
+}
+
+form{
+    border-radius: 2rem;
+    border: 1px solid;
+    right: 6%;
+    top: 6%;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-left: 10%;
+}
+.search{
+    width: 70%;
+    border-radius: 3rem;
+    border: 1px solid;
+    right: 2%;
+    left: 16.5%;
+    top: 6%;
+    position: absolute;
+    height: 90%;
+    padding-right: 0%;
+    margin-left: 10%;
+    border: transparent;
+}
+.lupa{
+    border-radius: 5rem;
+    right: 5%;
+    left: 1%;
+    top: 6%;
+    position: absolute;
+    height: 80%;
+    padding-right: 0%;
+    margin-left: 5%;
+}
+
+.header2{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5em;
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+
+
+h1{
+    margin-left: 10px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.grid-container {
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: 0 120px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.variacao,
+.volumeAtivo{
+    margin-top: 22px;
+}
+.barra{
+    border-left: 1px solid black;
+}
+h4{
+    margin-top: 7px;
+    color: grey;
+}
+
+/* RODAPÉ */
+
+.sugestao{
+    margin: 20px;
+    font-weight: bold;
+}
+
+
+/* VERSÃO MOBILE / @MEDIA */
