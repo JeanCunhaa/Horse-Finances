@@ -57,10 +57,9 @@ form {
     border-radius: 2rem;
     border: 0.063rem solid;
     right: 6%;
-    top: 9%;
     position: absolute;
-    width: 8%;
-    height: 5%;
+    width: 10%;
+    height: 2.6rem;
     padding-left: 5%;
     margin-left: 10%;
     background-color: white;
@@ -172,7 +171,6 @@ footer{
         right: 0;
         left: -4%;
         width: 81%;
-        margin-top: -0.7rem;
     }
     .header2{
         margin: 0.6rem 0;
