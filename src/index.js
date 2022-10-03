@@ -11,8 +11,8 @@ import './styles.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Principal />
+    <Principal/>
     <Grafico/>
-    <Footer />
+    <Footer/>
   </React.StrictMode>
 );
