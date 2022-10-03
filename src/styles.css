@@ -18,8 +18,13 @@ body{
     justify-content: space-between;
 }
 
-.icone-login{
+.iconeLogin{
     margin-left: 1rem;
+    
+}
+
+.iconeLoginSigla{
+    padding-left: 1rem;
 }
 
 .icone-cabecalho{

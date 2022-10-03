@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import iconeLogin from '../../img/contorno-de-cabeca-de-cavalo.png'
-import iconeLoginSigla from '../../img/HF.png'
+import iconeLoginSigla from '../../img/HF-branco.png'
 import lupa from '../../img/download.png'
 
 class Header extends Component {
