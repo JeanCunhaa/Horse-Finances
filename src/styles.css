@@ -50,6 +50,9 @@ body{
     text-decoration: none;
     color: white;
 }
+.link:hover{
+    color: #A0A0A0;
+}
 
 form {
     border-radius: 2rem;
@@ -99,7 +102,6 @@ form {
     font-family: 'Fantasy', cursive;
     color: white;
 }
-
 
 h1{
     margin-left: 0.625rem;

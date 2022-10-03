@@ -1,0 +1,124 @@
+/* GERAL  */
+
+*{
+    margin: 0px;
+    color: white;
+}
+body{
+    background-color: #18191a;
+}
+a{
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+.area-login{
+    background: #242526 ;
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.iconeLogin{
+    margin-left: 1rem;
+    
+}
+
+.iconeLoginSigla{
+    padding-left: 1rem;
+}
+
+.icone-cabecalho{
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+.icone-cabecalho:hover{
+    transform: scale(1.2);
+}
+
+.login{
+    padding-right: 1.5rem;
+    color: white;
+}
+
+.link{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: #A0A0A0;
+}
+
+/* CONTEÚDO  */
+
+input{
+    color: black;
+}
+.conteudo-principal{
+    text-align: center;
+    background-color: #242526;
+    padding: 1rem;
+    margin: 1.5rem 35%;
+    border-radius: 8px;
+}
+h1{
+    padding: 1.3rem 0;
+    font-size: 2.8rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+}
+label{
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.9rem 0 0.4rem;
+}
+input{
+    height: 1.4rem;
+    width: 80%;
+}
+#cadastrar{
+    display: block;
+    width: 50%;
+    text-align: center;
+    background-color: #c2c2c2;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 2rem auto 1.1rem;
+    height: auto;
+    border-radius: 7px;
+}
+
+/* RODAPÉ */
+
+footer{
+    background-color: #242526;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.3rem;
+    margin-top: 1rem;
+    box-shadow: 0 50vh 0 50vh #242526;
+}
+
+/* MOBILE / MEDIA */
+
+@media (max-width: 1050px) {
+
+    .conteudo-principal{
+        margin: 1.5rem 22%;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .conteudo-principal{
+        margin: 1.5rem 8%;
+    }
+
+}
