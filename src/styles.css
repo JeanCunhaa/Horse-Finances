@@ -10,6 +10,11 @@ body{
 
 /* CABEÇALHO */
 
+
+.search {
+    color: black;
+}
+
 .area-login{
     background: #242526 ;
     align-items: center;
