@@ -3,7 +3,7 @@ import iconeLogin from '../../img/contorno-de-cabeca-de-cavalo.png'
 import iconeLoginSigla from '../../img/HF-branco.png'
 import lupa from '../../img/download.png'
 const axios = require('axios');
-export default function Header() {
+export default function Principal() {
 
     const [fname, setFname] = useState("")
 
@@ -104,5 +104,3 @@ export default function Header() {
         )
     }
 }
-
-export default Principal
