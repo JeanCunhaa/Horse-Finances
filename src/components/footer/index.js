@@ -5,9 +5,9 @@ class Footer extends Component {
         return(
             <>
                 <div className="sugestao">
-                        <p>
-                            Sugestão de Compra: <img src="" alt="Imagem Sugestão" />
-                        </p>
+                    <p>
+                        Sugestão de Compra: <img src="" alt="Imagem Sugestão" />
+                    </p>
                 </div>
                 <footer>
                     <p>Copyright © - All rights reserved.</p>
