@@ -1,10 +1,39 @@
-import React, { Component,useState } from 'react'
+import React, { Component,useState,useEffect} from 'react'
 import iconeLogin from '../../img/contorno-de-cabeca-de-cavalo.png'
 import iconeLoginSigla from '../../img/HF-branco.png'
 import lupa from '../../img/download.png'
+const axios = require('axios');
 export default function Header() {
 
     const [fname, setFname] = useState("")
+
+    const [moedaItems, initMoeda] = useState([])
+                const fetchData = async () => {
+                let response = await axios.get('https://coinlib.io/api/v1/coin?key=a0888e1f7342420a&pref=BRL&symbol=ETH')
+                console.log(response)  
+                return response.data
+                }
+
+                useEffect(() => {
+                    fetchData()
+                    .then((res) => {
+                        initMoeda(res)
+                    })
+                    .catch((e) => {
+                        console.log(e.message)
+                    })
+                }, [])
+            
+                var moedas = {  
+                valor: moedaItems.price,
+                nome:  moedaItems.name,
+                simbolo:  moedaItems.symbol,
+                restante:  moedaItems.remaining,
+                volume24h:  moedaItems.total_volume_24h,
+                baixa24h:  moedaItems.low_24h,
+                 alta24h:  moedaItems.high_24h
+                }
+
 
     const handleChange = e => {    setFname(e.target.value)  }
         return(
@@ -34,32 +63,34 @@ export default function Header() {
             
                 </header>
             
+                
+
                 <div className="principal">
                     <div className="grid-container">
                         <div className="grid-item">
-                            <h2 className="nomeAtivo">NomeAtivo</h2>
+                            <h2 className="nomeAtivo"><p>{moedas.nome}</p></h2>
                         </div>
                         <div className="grid-item barra">
                             <div>
                                 <h4>Preço</h4>
                                 <h2 className="precoAtivo"></h2>
                             </div>
-                            <div className="variacao">
+                            <div className="variação">
                                 <h4>Variação(Dia)</h4>
-                                <h2>1,04%</h2>
+                                <h2><p>{moedas.alta24h-moedas.baixa24h}</p></h2>
                             </div>
                         </div>
                     
                         <div className="grid-item barra">
                             <div className="variacaoDiaria">   
                                 <h4>Max(24h)</h4>
-                                <h2 className="variacaoMax">R$1.000.000,00</h2>
+                                <h2 className="variacaoMax"><p>{moedas.alta24h}</p></h2>
                                 <h4>Min(24h)</h4>
-                                <h2 className="variacaoMin">R$1.000.000,00</h2>
+                                <h2 className="variacaoMin"><p>{moedas.baixa24h}</p></h2>
                             </div>
                             <div className="volumeAtivo">
                                 <h4>Volume do Ativo</h4>
-                                <h2>R$1.000.000,00</h2>
+                                <h2><p>{moedas.volume24h}</p></h2>
                             </div>
                         </div>
                     
