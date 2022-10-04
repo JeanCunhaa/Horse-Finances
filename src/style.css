@@ -52,6 +52,8 @@
     color: #00ff88;
     font-weight: 800;
     margin: 0;
+    padding-bottom: 2rem;
+    font-style: italic;
 }
 
 .textfield{
@@ -99,4 +101,72 @@ footer{
     font-weight: bold;
     padding: 0.8rem;
     color: #00ff88;
+}
+
+@media (max-width: 750px) {
+
+    body{
+        background: #201b2c;
+    }
+
+    .main-login{
+        width: 100%;
+        height: 100%;
+        background: #201b2c;
+        display: list-item;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-login{
+        width: 60%;
+        height: 100%;
+        margin-left: 4rem;
+        margin-top: 5rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .logo{
+        margin-left: 2rem;
+    }
+
+    .left-login > h1{
+        color: #77ffc0;
+        margin-left: 4rem;
+    }
+
+    .right-login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-login{
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 35px;
+        background: #2f2841;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #00000056;
+        margin-bottom: 13rem;
+    }
+    
+    .card-login > h1{
+        color: #00ff88;
+        font-weight: 800;
+        font-style: italic;
+        margin-left: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    
+    
 }
