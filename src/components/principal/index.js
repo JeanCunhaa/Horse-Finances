@@ -184,7 +184,7 @@ export default function Principal() {
         </div>
         <div className="grafico">
           <h3>
-            Gráfico de <span className="ativo">nome_ativo</span> para BRL
+            Gráfico de <span className="ativo">{MoedaNome}</span> para BRL
           </h3>
         </div>
       </div>
