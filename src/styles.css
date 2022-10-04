@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap');
+
 /* GERAL */
 
 *{
     margin: 0px;
     color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
-    background-color: #18191a;
+    background-color: #201b2c;
 }
 
 /* CABEÇALHO */
@@ -18,7 +21,7 @@ body{
     color: #18191a;
 }
 .area-login{
-    background: #242526 ;
+    background: #2f2841 ;
     align-items: center;
     display: flex;
     height: 3rem;
@@ -116,7 +119,9 @@ h1{
 /* CONTEÚDO PRINCIPAL */
 
 .grid-container {
-    background-color: #242526;
+    background-color: #2f2841;
+    font-weight: 800;
+    letter-spacing: 3px;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 0.625rem;
@@ -152,7 +157,7 @@ h4{
     text-align: center;
 }
 footer{
-    background-color: #242526;
+    background-color: #2f2841;
     text-align: center;
     font-size: 1.3rem;
     font-weight: bold;

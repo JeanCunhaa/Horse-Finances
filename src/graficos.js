@@ -13,7 +13,7 @@ export const data = [
 export const options = {
   title: "Bitcoin",
   titleTextStyle: {color: "white"},
-  backgroundColor: "#18191a",
+  backgroundColor: "#201b2c",
   hAxis: { title: "Dia", titleTextStyle: { color: "#b0b0a3" }, textStyle: {color: "white"} },
   vAxis: { minValue: 0, textStyle: {color: "white"} },
   legend: {textStyle: {color: "white"} },
