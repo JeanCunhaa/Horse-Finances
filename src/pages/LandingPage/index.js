@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logo from '../../img/indice.png'
 
+import './style.css'
 
 class Home extends Component {
     render(){
@@ -24,11 +25,16 @@ class Home extends Component {
                                 <div className='textfield'>
                                     <label for='entrar'>Ja tem uma conta?</label>
                                     <button className='btn-cadastro'>Entrar</button>
+                                    <h4>Esqueceu a senha? Fodase!</h4>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </body>
+                <footer>
+                    <p>© 2022 HorseFinances. All rights reserved.</p>
+                </footer>
             </>
         )
     }
