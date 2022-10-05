@@ -34,7 +34,6 @@ class Home extends Component {
                                 <TextFieldContainer>
                                     <EntrarContainer>Ja tem uma conta?</EntrarContainer>
                                     <BtnCadastroContainer>Entrar</BtnCadastroContainer>
-                                    <h4>Esqueceu a senha? Fodase!</h4>
                                 </TextFieldContainer>
                                 
                             </CardLoginContainer>

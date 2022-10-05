@@ -1,8 +1,13 @@
 import React, { Component,useState } from 'react'
-import iconeLogin from '../../img/contorno-de-cabeca-de-cavalo.png'
-import iconeLoginSigla from '../../img/HF-branco.png'
 
+import { MainLoginContainer } from './styles'
+import { RightLoginContainer } from './styles'
+import { CardLoginContainer } from './styles'
+import { TextFieldContainer } from './styles'
+import { CadastroContainer } from './styles'
 
+import { BtnCadastroContainer} from './styles'
+import { EntrarContainer} from './styles'
 
 //import '../../stylescadastrar.css'
 
@@ -13,44 +18,34 @@ export default function HeaderCadastrar() {
     const handleChange = e => {    setFname(e.target.value)  }
         return(
             <>
-                <header>
-                    <div class="area-login">
-                        <a href="">
-                            <div class="icone-cabecalho">
-                                <img src={iconeLogin} alt="" class="iconeLogin" />
-                            
-                                <img src={iconeLoginSigla} alt="" class="iconeLoginSigla" />
-                            
-                            </div>
-                        </a>
-                        <div class="login">
-                            <a href="" class="link"> Cadastrar</a> |
-                            <a href="" class="link"> Entrar</a>
-                        </div>
-                    </div>
-                </header>
-
-                <div class="conteudo-principal">
-
-                    <h1>Cadastrar</h1>
-
-                    <form>
-                        <label for="nome">Nome:</label> 
-                        <input type="text" name="nome" id="nome" /> 
-
-                        <label for="cpf">CPF (apenas números):</label> 
-                        <input type="text" name="cpf" id="cpf" /> 
-
-                        <label for="email">E-mail:</label> 
-                        <input type="email" name="email" id="email" /> 
-
-                        <label for="senha">Senha:</label> 
-                        <input type="text" name="senha" id="senha" />
-
-                        <input type="button" value="Cadastrar" id="cadastrar" />
-
-                    </form>
-                </div>
+                <body>
+                    <MainLoginContainer>
+                        <RightLoginContainer>
+                            <CardLoginContainer>
+                                <h1>HORSE FINANCES</h1>
+                                <TextFieldContainer>
+                                    <CadastroContainer>Nome Completo:</CadastroContainer>
+                                    <input type='text' name='nomeCompleto' placeholder='Nome Completo'></input>
+                                    <CadastroContainer>Email:</CadastroContainer>
+                                    <input type='text' name='usuario' placeholder='Email'></input>
+                                    <CadastroContainer>CPF:</CadastroContainer>
+                                    <input type='text' name='CPF' placeholder='CPF'></input>
+                                </TextFieldContainer>
+                                <TextFieldContainer>
+                                    <EntrarContainer>Senha:</EntrarContainer>
+                                    <input type='text' name='senha' placeholder='Senha'></input>
+                                    <EntrarContainer>Confirme a senha:</EntrarContainer>
+                                    <input type='text' name='senha' placeholder='Confirmação senha'></input>
+                                    <BtnCadastroContainer>Cadastrar</BtnCadastroContainer>
+                                </TextFieldContainer>
+                                
+                            </CardLoginContainer>
+                        </RightLoginContainer>
+                        </MainLoginContainer>
+                </body>
+                <footer>
+                    <p>© 2022 HorseFinances. All rights reserved.</p>
+                </footer>
             </>
         );
 }
