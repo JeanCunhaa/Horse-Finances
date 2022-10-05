@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+
 export const MainLoginContainer = styled.div`
     width: 100vw;
     height: 100vh;
@@ -22,7 +23,7 @@ export const LeftLoginContainer = styled.div`
         color: #77ffc0;
     }
 
-    logo{
+    img{
         margin-top: 5rem;
     }
 

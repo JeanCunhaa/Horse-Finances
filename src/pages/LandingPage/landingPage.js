@@ -22,7 +22,7 @@ class Home extends Component {
                         <LeftLoginContainer>
                             <h1>Faça login ou</h1>
                             <h1>entre para o nosso time</h1>
-                            <img src={logo} className='logo'/>
+                            <img src={logo} />
                         </LeftLoginContainer>
                         <RightLoginContainer>
                             <CardLoginContainer>
