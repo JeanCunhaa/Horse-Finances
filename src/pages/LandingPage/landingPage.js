@@ -1,21 +1,25 @@
 import React, { Component } from 'react'
 import logo from '../../img/indice.png'
 
-import './style.css'
+import { MainLoginContainer } from './styles'
+import { LeftLoginContainer } from './styles'
+import { RightLoginContainer } from './styles'
+
+
+//import '../../style.css'
 
 class Home extends Component {
     render(){
         return(
             <>
                 <body>
-                    <div className='main-login'>
-                        <div className='left-login'>
+                    <MainLoginContainer>
+                        <LeftLoginContainer>
                             <h1>Faça login ou</h1>
-                            
                             <h1>entre para o nosso time</h1>
                             <img src={logo} className='logo'/>
-                        </div>
-                        <div className='right-login'>
+                        </LeftLoginContainer>
+                        <RightLoginContainer>
                             <div className='card-login'>
                                 <h1>HORSE FINANCES</h1>
                                 <div className='textfield'>
@@ -29,8 +33,8 @@ class Home extends Component {
                                 </div>
                                 
                             </div>
-                        </div>
-                    </div>
+                        </RightLoginContainer>
+                        </MainLoginContainer>
                 </body>
                 <footer>
                     <p>© 2022 HorseFinances. All rights reserved.</p>

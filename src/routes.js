@@ -4,7 +4,11 @@ import { Route,Routes, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Cadastro from "./pages/cadastro/index.js";
 import Entrar from "./pages/entrar/index.js";
-import LandingPage from "./pages/LandingPage/index.js";
+import LandingPage from "./pages/LandingPage/landingPage.js";
+
+
+
+
 
 const Routess = () => {
    return(
