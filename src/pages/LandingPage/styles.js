@@ -95,3 +95,18 @@ export const BtnCadastroContainer = styled.button`
     box-shadow: 0px 10px 40px -12px #00ff8052;
 
 `;
+
+export const EntrarContainer = styled.label`
+    color: #f0ffffde;
+    margin-bottom: 10px;
+`;
+
+export const FooterContainer = styled.label`
+    background-color: #2f2841;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    color: #00ff88;
+`;
+

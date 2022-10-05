@@ -8,6 +8,7 @@ import { CardLoginContainer } from './styles'
 import { TextFieldContainer } from './styles'
 import { CadastroContainer } from './styles'
 import { BtnCadastroContainer} from './styles'
+import { EntrarContainer} from './styles'
 
 
 //import '../../style.css'
@@ -27,14 +28,14 @@ class Home extends Component {
                             <CardLoginContainer>
                                 <h1>HORSE FINANCES</h1>
                                 <TextFieldContainer>
-                                    <label for='cadastro'>Para se cadastrar:</label>
+                                    <CadastroContainer>Para se cadastrar:</CadastroContainer>
                                     <BtnCadastroContainer>Cadastre-se</BtnCadastroContainer>
                                 </TextFieldContainer>
-                                <div className='textfield'>
-                                    <label for='entrar'>Ja tem uma conta?</label>
-                                    <button className='btn-cadastro'>Entrar</button>
+                                <TextFieldContainer>
+                                    <EntrarContainer>Ja tem uma conta?</EntrarContainer>
+                                    <BtnCadastroContainer>Entrar</BtnCadastroContainer>
                                     <h4>Esqueceu a senha? Fodase!</h4>
-                                </div>
+                                </TextFieldContainer>
                                 
                             </CardLoginContainer>
                         </RightLoginContainer>
