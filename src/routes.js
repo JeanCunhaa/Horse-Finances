@@ -1,16 +1,22 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route,Routes, BrowserRouter } from "react-router-dom";
 
 import Home from "./Home";
-import Sobre from "./Sobre";
-import Usuario from "./Usuario";
+import Cadastro from "./pages/Cadastro/index.js";
+import Entrar from "./pages/Entrar/index.js";
+import LandingPage from "./pages/LandingPage/index";
 
-const Routes = () => {
+const Routess = () => {
    return(
        <BrowserRouter>
-           <Route component = { Home }  path="/" exact />
+       <Routes>
+           <Route path="/" element={ <Home/> } />
+           <Route path="/cadastro" element={ <Cadastro/> } />
+              <Route path="/entrar" element={ <Entrar/> } />
+                <Route path="/LandingPage" element={ <LandingPage/> } />
+       </Routes>
        </BrowserRouter>
    )
 }
-
-export default Routes;
+//pra usa aas rota  <Link to="/cadastro">Cadastrar</Link> ex..
+export default Routess;
