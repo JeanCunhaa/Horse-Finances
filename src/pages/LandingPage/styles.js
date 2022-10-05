@@ -48,4 +48,50 @@ export const CardLoginContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 
+    h1{
+        color: #00ff88;
+        font-weight: 1000;
+        margin: 0;
+        padding-bottom: 2rem;
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+
+`;
+
+export const TextFieldContainer = styled.div`
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2rem;
+
+    input ::placeholder{
+        color: #f0ffff94;
+    }
+
+`;
+
+export const CadastroContainer = styled.label`
+    color: #f0ffffde;
+    margin-bottom: 10px;
+`;
+
+
+export const BtnCadastroContainer = styled.button`
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+
 `;

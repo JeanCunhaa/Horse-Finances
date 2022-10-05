@@ -4,6 +4,10 @@ import logo from '../../img/indice.png'
 import { MainLoginContainer } from './styles'
 import { LeftLoginContainer } from './styles'
 import { RightLoginContainer } from './styles'
+import { CardLoginContainer } from './styles'
+import { TextFieldContainer } from './styles'
+import { CadastroContainer } from './styles'
+import { BtnCadastroContainer} from './styles'
 
 
 //import '../../style.css'
@@ -20,19 +24,19 @@ class Home extends Component {
                             <img src={logo} className='logo'/>
                         </LeftLoginContainer>
                         <RightLoginContainer>
-                            <div className='card-login'>
+                            <CardLoginContainer>
                                 <h1>HORSE FINANCES</h1>
-                                <div className='textfield'>
+                                <TextFieldContainer>
                                     <label for='cadastro'>Para se cadastrar:</label>
-                                    <button className='btn-cadastro'>Cadastre-se</button>
-                                </div>
+                                    <BtnCadastroContainer>Cadastre-se</BtnCadastroContainer>
+                                </TextFieldContainer>
                                 <div className='textfield'>
                                     <label for='entrar'>Ja tem uma conta?</label>
                                     <button className='btn-cadastro'>Entrar</button>
                                     <h4>Esqueceu a senha? Fodase!</h4>
                                 </div>
                                 
-                            </div>
+                            </CardLoginContainer>
                         </RightLoginContainer>
                         </MainLoginContainer>
                 </body>
