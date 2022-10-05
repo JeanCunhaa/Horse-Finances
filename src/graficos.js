@@ -11,7 +11,7 @@ export const data = [
 ];
 
 export const options = {
-  title: "Bitcoin",
+  title: "Coin",
   titleTextStyle: {color: "white"},
   backgroundColor: "#201b2c",
   hAxis: { title: "Dia", titleTextStyle: { color: "#b0b0a3" }, textStyle: {color: "white"} },
@@ -23,7 +23,7 @@ export const options = {
 const Grafico = () => {
   return (
     <div className='Grafico'>
-      <div className='rola'>
+      <div className='graficox'>
         <Chart 
         chartType="AreaChart"
         width="100%"
