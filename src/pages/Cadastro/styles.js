@@ -9,6 +9,15 @@ export const MainLoginContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        footer{
+            margin-top: 8rem;
+        }
+      }
 `;
 
 
@@ -18,6 +27,10 @@ export const RightLoginContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 7rem;
+    }
 
 `;
 
@@ -40,6 +53,7 @@ export const CardLoginContainer = styled.div`
         font-style: italic;
         letter-spacing: 2px;
     }
+    
 
 `;
 
@@ -106,5 +120,9 @@ export const FooterContainer = styled.label`
     font-weight: bold;
     padding: 0.8rem;
     color: #00ff88;
+    @media (max-width: 768px) {
+        
+      }
+    
 `;
 

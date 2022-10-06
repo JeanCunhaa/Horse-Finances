@@ -12,6 +12,7 @@ import { CadastroContainer } from './styles'
 import { BtnCadastroContainer} from './styles'
 import { EntrarContainer} from './styles'
 
+
 //import '../../styleEntrar.css'
 
 

@@ -41,11 +41,12 @@ export default function HeaderCadastrar() {
                                 
                             </CardLoginContainer>
                         </RightLoginContainer>
+                        <footer>
+                            <p>© 2022 HorseFinances. All rights reserved.</p>
+                        </footer>
                         </MainLoginContainer>
                 </body>
-                <footer>
-                    <p>© 2022 HorseFinances. All rights reserved.</p>
-                </footer>
+                
             </>
         );
 }
