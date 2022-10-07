@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 
@@ -91,7 +92,7 @@ export const CadastroContainer = styled.label`
 `;
 
 
-export const BtnCadastroContainer = styled.button`
+export const BtnCadastroContainer = styled(Link)`
     width: 100%;
     padding: 16px 0px;
     margin: 25px;
@@ -105,6 +106,9 @@ export const BtnCadastroContainer = styled.button`
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-family: Noto Sans, sans-serif;
+    text-decoration: none;
+    text-align: center;
 
 `;
 

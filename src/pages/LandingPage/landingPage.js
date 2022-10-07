@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../img/indice.png'
-import { Link } from 'react-router-dom'
+
 
 import { MainLoginContainer } from './styles'
 import { LeftLoginContainer } from './styles'

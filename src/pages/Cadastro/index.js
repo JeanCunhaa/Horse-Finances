@@ -36,7 +36,7 @@ export default function HeaderCadastrar() {
                                     <input type='text' name='senha' placeholder='Senha'></input>
                                     <EntrarContainer>Confirme a senha:</EntrarContainer>
                                     <input type='text' name='senha' placeholder='Confirmação senha'></input>
-                                    <BtnCadastroContainer>Cadastrar</BtnCadastroContainer>
+                                    <BtnCadastroContainer to="/entrar">Cadastrar</BtnCadastroContainer>
                                 </TextFieldContainer>
                                 
                             </CardLoginContainer>

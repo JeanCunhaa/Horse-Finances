@@ -9,7 +9,7 @@ import { CardLoginContainer } from './styles'
 import { TextFieldContainer } from './styles'
 import { CadastroContainer } from './styles'
 
-import { BtnCadastroContainer} from './styles'
+import { BtnEntrarContainer } from './styles'
 import { EntrarContainer} from './styles'
 
 
@@ -35,7 +35,7 @@ export default function HeaderEntrar() {
                                 <TextFieldContainer>
                                     <EntrarContainer>Senha:</EntrarContainer>
                                     <input type='text' name='senha' placeholder='Senha'></input>
-                                    <BtnCadastroContainer>Entrar</BtnCadastroContainer>
+                                    <BtnEntrarContainer to="/">Entrar</BtnEntrarContainer>
                                     <h4>Esqueceu a senha? Fodase!</h4>
                                 </TextFieldContainer>
                                 
