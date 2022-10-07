@@ -111,12 +111,12 @@ export default function Principal() {
             <img src={iconeLoginSigla} alt="" className="iconeLoginSigla" />
           </div>
           <div className="login">
-            <a href="" className="link">
+            <a href="/cadastro" className="link">
               {" "}
               Cadastrar
             </a>{" "}
             |
-            <a href="" className="link">
+            <a href="/entrar" className="link">
               {" "}
               Entrar
             </a>
