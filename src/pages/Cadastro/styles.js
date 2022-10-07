@@ -117,16 +117,12 @@ export const EntrarContainer = styled.label`
     margin-bottom: 10px;
 `;
 
-export const FooterContainer = styled.label`
-    background-color: #2f2841;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 0.8rem;
-    color: #00ff88;
+export const FooterContainer = styled.footer`
+    margin-top: 1rem;
     @media (max-width: 768px) {
-        
+        margin-top: 5rem;
       }
     
 `;
+
 

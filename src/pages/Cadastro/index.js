@@ -5,9 +5,9 @@ import { RightLoginContainer } from './styles'
 import { CardLoginContainer } from './styles'
 import { TextFieldContainer } from './styles'
 import { CadastroContainer } from './styles'
-
 import { BtnCadastroContainer} from './styles'
 import { EntrarContainer} from './styles'
+import { FooterContainer } from './styles'
 
 //import '../../stylescadastrar.css'
 
@@ -41,10 +41,10 @@ export default function HeaderCadastrar() {
                                 
                             </CardLoginContainer>
                         </RightLoginContainer>
-                        <footer>
-                            <p>© 2022 HorseFinances. All rights reserved.</p>
-                        </footer>
                         </MainLoginContainer>
+                        <FooterContainer>
+                            <p>© 2022 HorseFinances. All rights reserved.</p>
+                        </FooterContainer>
                 </body>
                 
             </>
