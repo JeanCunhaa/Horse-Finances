@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Like from '../../img/polegar-para-cima.png'
 
 class Footer extends Component {
     render(){
@@ -6,7 +7,7 @@ class Footer extends Component {
             <>
                 <div className="sugestao">
                     <p>
-                        Sugestão de Compra: <img src="" alt="Imagem Sugestão" />
+                        Sugestão de Compra: <img src={Like} alt="Imagem Sugestão" />
                     </p>
                 </div>
                 <footer>
