@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../img/indice.png'
+import { Link } from 'react-router-dom'
 
 import { MainLoginContainer } from './styles'
 import { LeftLoginContainer } from './styles'
@@ -7,7 +8,8 @@ import { RightLoginContainer } from './styles'
 import { CardLoginContainer } from './styles'
 import { TextFieldContainer } from './styles'
 import { CadastroContainer } from './styles'
-import { BtnCadastroContainer} from './styles'
+import { BtnCadastroContainer } from './styles'
+import { BtnEntrarContainer } from './styles'
 import { EntrarContainer} from './styles'
 
 
@@ -29,11 +31,11 @@ class Home extends Component {
                                 <h1>HORSE FINANCES</h1>
                                 <TextFieldContainer>
                                     <CadastroContainer>Para se cadastrar:</CadastroContainer>
-                                    <BtnCadastroContainer>Cadastre-se</BtnCadastroContainer>
+                                    <BtnCadastroContainer to="/cadastro">Cadastre-se</BtnCadastroContainer>
                                 </TextFieldContainer>
                                 <TextFieldContainer>
                                     <EntrarContainer>Ja tem uma conta?</EntrarContainer>
-                                    <BtnCadastroContainer>Entrar</BtnCadastroContainer>
+                                    <BtnEntrarContainer to="/entrar">Entrar</BtnEntrarContainer>
                                 </TextFieldContainer>
                                 
                             </CardLoginContainer>
