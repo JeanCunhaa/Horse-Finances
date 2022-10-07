@@ -34,7 +34,7 @@ export default function HeaderEntrar() {
                                 </TextFieldContainer>
                                 <TextFieldContainer>
                                     <EntrarContainer>Senha:</EntrarContainer>
-                                    <input type='text' name='senha' placeholder='Senha'></input>
+                                    <input type='password' name='senha' placeholder='Senha'></input>
                                     <BtnEntrarContainer to="/">Entrar</BtnEntrarContainer>
                                     <h4>Esqueceu a senha? Fodase!</h4>
                                 </TextFieldContainer>

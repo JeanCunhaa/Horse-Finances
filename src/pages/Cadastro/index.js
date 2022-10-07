@@ -33,9 +33,9 @@ export default function HeaderCadastrar() {
                                 </TextFieldContainer>
                                 <TextFieldContainer>
                                     <EntrarContainer>Senha:</EntrarContainer>
-                                    <input type='text' name='senha' placeholder='Senha'></input>
+                                    <input type='password' name='senha' placeholder='Senha'></input>
                                     <EntrarContainer>Confirme a senha:</EntrarContainer>
-                                    <input type='text' name='senha' placeholder='Confirmação senha'></input>
+                                    <input type='password' name='senha' placeholder='Confirmação senha'></input>
                                     <BtnCadastroContainer to="/entrar">Cadastrar</BtnCadastroContainer>
                                 </TextFieldContainer>
                                 
