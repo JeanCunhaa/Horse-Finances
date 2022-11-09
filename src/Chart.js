@@ -33,6 +33,9 @@ export default function Chart(props){
         series={series}
         type="candlestick"
         width={640}
-        height={480}/>
+        height={480}
+        align= 'center'
+        />
+
     )
 }
