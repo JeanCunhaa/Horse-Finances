@@ -11,7 +11,7 @@ class Footer extends Component {
                     </p>
                 </div>
                 <footer>
-                    <p>Copyright © - All rights reserved.</p>
+                    <p>© 2022 HorseFinances. All rights reserved.</p>
                 </footer>
             </>
         )
