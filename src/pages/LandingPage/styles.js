@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 
 
 export const MainLoginContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 95vh;
     background: #201b2c;
     display: flex;
     justify-content: center;
