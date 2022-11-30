@@ -8,6 +8,7 @@ import Footer from './components/footer/index'
 import Chart from './Chart';
 import { getCandles } from './DataService';
 import './styles.css'
+import Csv from './components/csv/csv';
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -48,7 +49,9 @@ export default function Home() {
     </select>
     </div>
     <Chart data={data}/>
+    <Csv/>
     <Footer/>
+    
   </React.StrictMode>
 )
 }

@@ -1,0 +1,36 @@
+
+
+.App {
+    font-family: sans-serif;
+    
+  }
+  
+  table {
+    margin-left: 22em;
+    text-align: center;
+    padding: 0;
+    border-spacing: 0;
+    border: 1px solid #999;
+    border-right: 0;
+  }
+  
+  table th {
+    text-align: left;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+  }
+  
+  table td,
+  table th {
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 0;
+    border-top: 0;
+    padding: 3px 10px;
+  }
+
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35em;
+  }
+  
