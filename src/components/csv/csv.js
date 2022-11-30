@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div className="App">
-        <h2>Tendência de Compra: </h2>
+        <h2 class='tendencia'>Sugestão de Compra: @byCoinMarketCap</h2>
         <br></br>
       <DataGrid csv={csv} />
     </div>
