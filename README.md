@@ -1,3 +1,6 @@
+# use `node ./src/server.js` and `npm start` for start app :)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
