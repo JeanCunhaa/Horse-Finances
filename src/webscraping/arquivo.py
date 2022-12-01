@@ -80,6 +80,4 @@ df = df.astype({"Últimos 7 dias": float}, errors='ignore')
 df.head(30)
 
 
-print(df)
-
 df.to_csv('crypto.csv', index=False)
