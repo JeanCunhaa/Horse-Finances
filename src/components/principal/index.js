@@ -1,11 +1,13 @@
 import React, { Component, useState, useEffect } from "react";
 import iconeLogin from "../../img/contorno-de-cabeca-de-cavalo.png";
 import iconeLoginSigla from "../../img/HF-branco.png";
-import lupa from "../../img/download.png";
+import Chart from '../../Chart';
+import { getCandles } from '../../DataService';
+
 const axios = require("axios");
 
 export default function Principal() {
-  const [buttonText, setButtonText] = useState("Click");
+  const [buttonText, setButtonText] = useState("Pesquisar");
   const [MoedaNome, setMoedaNome] = useState("Bitcoin");
   const [MoedaPreco, setMoedaPreco] = useState("R$1.000.000,00");
   const [MoedaVariacao, setMoedaVariacao] = useState("1356.4621524832037");
@@ -14,8 +16,24 @@ export default function Principal() {
   const [MoedaVolume, setMoedaVolume] = useState("4260802736.0526823997");
   const [fname, setFname] = useState("");
   const [teste, setTeste] = useState("");
+  const [symbol, setSymbol] = useState('BTCUSDT')
+  const [interval, setInterval] = useState('1m')
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    getCandles(symbol, interval)
+      .then(data => setData(data))
+      .catch(err => alert(err.response ? err.response.data : err.message))
+  }, [symbol, interval])
+  
+  function onIntervalChange(event){
+    setInterval(event.target.value);
+  }
 
   async function apiCall(coin = "BTC") {
+
+    setSymbol(document.querySelector('.search').value.toUpperCase() + "USDT");
+      
     axios
       .get(
         "https://coinlib.io/api/v1/coin?key=a0888e1f7342420a&pref=BRL&symbol=" +
@@ -86,16 +104,16 @@ export default function Principal() {
     // setMoedaVolume(moedas.volume24h);
   }
 
-//   var response = apiCall();
-//   var moedas = {
-//     valor: response.price,
-//     nome: response.name,
-//     simbolo: response.symbol,
-//     restante: response.remaining,
-//     volume24h: response.total_volume_24h,
-//     baixa24h: response.low_24h,
-//     alta24h: response.high_24h,
-//   };
+  //   var response = apiCall();
+  //   var moedas = {
+  //     valor: response.price,
+  //     nome: response.name,
+  //     simbolo: response.symbol,
+  //     restante: response.remaining,
+  //     volume24h: response.total_volume_24h,
+  //     baixa24h: response.low_24h,
+  //     alta24h: response.high_24h,
+  //   };
 
   const handleChange = (e) => {
     setFname(e.target.value);
@@ -132,7 +150,6 @@ export default function Principal() {
               placeholder="Buscar"
               onChange={handleChange}
             />
-            <input className="lupa" type="image" src={lupa} />
           </form>
           <button
             className="botao"
@@ -188,6 +205,14 @@ export default function Principal() {
           </h3>
         </div>
       </div>
+      <div className="intervalBox">
+        <select onChange={onIntervalChange}>
+          <option>1m</option>
+          <option>1d</option>
+          <option>1w</option>
+        </select>
+      </div>
+      <Chart data={data}/>
     </>
   );
 }
