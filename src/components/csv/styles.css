@@ -6,7 +6,7 @@
   }
   
   table {
-    margin-left: 22em;
+    margin-left: 13%;
     text-align: center;
     padding: 0;
     border-spacing: 0;
@@ -31,6 +31,7 @@
 
   .tendencia{
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 31em;
+    margin-left: 35%;
+    padding: 1rem 0 0.5rem 0;
   }
   
